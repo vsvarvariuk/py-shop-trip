@@ -4,7 +4,7 @@ from app.fiilee import Config
 
 
 def shop_trip() -> None:
-    config = Config("../app/config.json")
+    config = Config("app/config.json")
     res_shop = []
     for elem in config.shops:
         res_shop.append(Shops(elem["name"],
