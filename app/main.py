@@ -4,7 +4,7 @@ from app.fiilee import Config
 
 
 def shop_trip() -> None:
-    config = Config()
+    config = Config("../app/config.json")
     res_shop = []
     for elem in config.shops:
         res_shop.append(Shops(elem["name"],
@@ -84,3 +84,6 @@ def shop_trip() -> None:
                   f"See you again!\n")
             print(f"{elem.name} rides home\n"
                   f"{elem.name} now has {round(elem.money, 2)} dollars\n")
+
+import os
+print(os.getcwd())
