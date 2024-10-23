@@ -84,4 +84,3 @@ def shop_trip() -> None:
                   f"See you again!\n")
             print(f"{elem.name} rides home\n"
                   f"{elem.name} now has {round(elem.money, 2)} dollars\n")
-
