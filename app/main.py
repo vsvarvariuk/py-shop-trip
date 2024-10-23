@@ -70,13 +70,14 @@ def shop_trip() -> None:
             for i in range(len(list_product)):
                 prices = list_product_count[i] * list_price[i]
                 str_prices = str(prices)
+                mn = "s"
                 if str_prices[-1] == "0":
                     print(f'{list_product_count[i]} '
-                          f'{list_product[i]+"s"} for '
+                          f'{list_product[i] + mn} for '
                           f'{int(prices)} dollars')
                 else:
                     print(f'{list_product_count[i]} '
-                          f'{list_product[i] + "s"} for '
+                          f'{list_product[i] + mn} for '
                           f'{prices} dollars')
                 total_cost += list_product_count[i] * list_price[i]
             print(f"Total cost is {total_cost} dollars\n"
