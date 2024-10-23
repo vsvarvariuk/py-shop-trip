@@ -85,5 +85,3 @@ def shop_trip() -> None:
             print(f"{elem.name} rides home\n"
                   f"{elem.name} now has {round(elem.money, 2)} dollars\n")
 
-import os
-print(os.getcwd())
